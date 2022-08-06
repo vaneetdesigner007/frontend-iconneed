@@ -2,6 +2,7 @@
 :root {
     --pri: #5368FB;
     --dark: #000000;
+    --gray: #CFD9E0;
 }
 
 @font-face {
@@ -91,6 +92,7 @@ html,
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #F8F8F8;
+    letter-spacing: .5px;
 }
 
 h1,
@@ -106,6 +108,31 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(227, 227, 227, 0.45);
 }
 
 html,
@@ -124,7 +151,19 @@ body {
 main.wrapper-main {
     padding-top: 73px;
 }
-
+.btn-sec {
+    background-color: var(--gray);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 18px;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
 
 .btn-pri {
     background-color: var(--pri);
@@ -138,25 +177,34 @@ main.wrapper-main {
     font-weight: 600;
     cursor: pointer;
 }
+.btn-lg {
+    height: 52px;
+    font-size: 18px;
+    font-weight: 500;
+}
 
 .header-search-block {
     width: 100%;
-    padding: 16px 20px;
+    padding: 60px 0;
+}
+
+.header-search-block .container {
+    max-width: 800px;
 }
 
 .header-search-block input {
-    height: 57px;
+    height: 65px;
     border-radius: 6px;
     background: #fff;
     border: 1px solid rgba(227, 227, 227, 0.65);
-    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 29px 30px 2px rgb(0 0 0 / 4%);
     width: 100%;
     padding: 0 20px;
     font-size: 16px;
     outline: none;
     transition: all 0.4s ease;
 }
-.header-search-block input:hover{
+.header-search-block input:hover {
     border-color: var(--dark);
 }
 
@@ -168,9 +216,163 @@ main.wrapper-main {
 }
 
 
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 25px;
-    gap: 25px;
+
+.feature-block {
+    padding: 30px 0 50px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-item a {
+    color: inherit;
+}
+
+.feature-item img {
+    display: block;
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.disc-card-feature {
+    padding: 14px;
+    position: relative;
+}
+
+.disc-card-feature h3 {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0 0 11px 0;
+}
+
+.disc-card-feature p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #404143;
+}
+
+.fluid-feature {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px 0 50px;
+    gap: 20px;
+}
+
+.left-content-feature {
+    width: 45%;
+    padding-bottom: 50px;
+}
+
+.left-content-feature h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #404143;
+    margin-bottom: 20px;
+}
+
+.left-content-feature p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #404143;
+    margin-bottom: 22px;
+}
+
+.fluid-feature figure {
+    width: 52%;
+    align-self: flex-end;
+}
+
+.fluid-feature figure img {
+    width: 100%;
+    display: block;
+}
+
+
+.heading-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.heading-main label {
+    font-weight: bold;
+    font-size: 20px;
+    color: #404143;
+}
+
+.heading-main h3 {
+    font-size: 46px;
+    background: linear-gradient(45deg, #00cbff 0%, #aa00f5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.latest-icons-block {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+.bundle-set-block .feature-item {
+    border-radius: 6px;
+    background: #e4f2ff;
+    box-shadow: 0px 6px 30px rgb(0 0 0 / 7%);
+}
+
+.bundle-set-block .feature-item figure img {
+    border-radius: 6px 6px 0 0;
+}
+
+.disc-card-feature .counter-set {
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    background-image: url(../src/assets/img/counter-bg.svg);
+    background-repeat: no-repeat;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    width: 75px;
+    height: 40px;
+    font-size: 12px;
+    color: #404143;
+    padding-top: 5px;
+}
+
+.disc-card-feature .counter-set strong {
+    font-size: 14px;
+}
+
+.bundle-set-block .disc-card-feature {
+    padding: 35px 20px 30px 20px;
+}
+
+.main-search-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-search-content h2 {
+    font-size: 50px;
+    background: linear-gradient(45deg, #00cbff 0%, #aa00f5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.main-search-content p {
+    font-size: 18px;
+    color: #374957;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.newsletter-field{
+    position: relative;
 }
