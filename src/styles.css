@@ -1,0 +1,176 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --pri: #5368FB;
+    --dark: #000000;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('assets/fonts/Stolzl-Light.eot');
+    src: local('Stolzl Light'), local('Stolzl-Light'),
+        url('assets/fonts/Stolzl-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Light.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Light.woff') format('woff'),
+        url('assets/fonts/Stolzl-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('assets/fonts/Stolzl-Thin.eot');
+    src: local('Stolzl Thin'), local('Stolzl-Thin'),
+        url('assets/fonts/Stolzl-Thin.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Thin.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Thin.woff') format('woff'),
+        url('assets/fonts/Stolzl-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl Book';
+    src: url('assets/fonts/Stolzl-Book.eot');
+    src: local('Stolzl Book'), local('Stolzl-Book'),
+        url('assets/fonts/Stolzl-Book.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Book.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Book.woff') format('woff'),
+        url('assets/fonts/Stolzl-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('assets/fonts/Stolzl-Regular.eot');
+    src: local('Stolzl Regular'), local('Stolzl-Regular'),
+        url('assets/fonts/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Regular.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Regular.woff') format('woff'),
+        url('assets/fonts/Stolzl-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('assets/fonts/Stolzl-Bold.eot');
+    src: local('Stolzl Bold'), local('Stolzl-Bold'),
+        url('assets/fonts/Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Bold.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Bold.woff') format('woff'),
+        url('assets/fonts/Stolzl-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: url('assets/fonts/Stolzl-Medium.eot');
+    src: local('Stolzl Medium'), local('Stolzl-Medium'),
+        url('assets/fonts/Stolzl-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Stolzl-Medium.woff2') format('woff2'),
+        url('assets/fonts/Stolzl-Medium.woff') format('woff'),
+        url('assets/fonts/Stolzl-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F8F8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+html body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Stolzl' !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+main.wrapper-main {
+    padding-top: 73px;
+}
+
+
+.btn-pri {
+    background-color: var(--pri);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 18px;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-search-block {
+    width: 100%;
+    padding: 16px 20px;
+}
+
+.header-search-block input {
+    height: 57px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid rgba(227, 227, 227, 0.65);
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+    width: 100%;
+    padding: 0 20px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.4s ease;
+}
+.header-search-block input:hover{
+    border-color: var(--dark);
+}
+
+.container {
+    max-width: 1160px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+    gap: 25px;
+}

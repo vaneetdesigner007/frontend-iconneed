@@ -1,0 +1,29 @@
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark);
+    padding: 15px 30px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+nav.navigation-main {
+    display: inline-flex;
+    align-items: center;
+}
+
+nav.navigation-main ul {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav.navigation-main ul li a {
+    padding: 8px 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
