@@ -1,0 +1,45 @@
+.search-icon-counter {
+    margin-bottom: 40px;
+}
+
+.search-icon-counter h4 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #404143;
+}
+
+.icon-listing-block {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 10px;
+}
+
+.icon-listing-block .icon-view {
+    width: 100%;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid rgba(227, 227, 227, 0.65);
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+    aspect-ratio: 1 / 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.icon-listing-block .icon-view:hover {
+    border: 1px solid rgb(184 184 184 / 65%);
+    box-shadow: 0px 29px 30px rgb(0 0 0 / 7%);
+}
+
+.icon-listing-block .icon-view img {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.icons-listing {
+    padding-top: 20px;
+    padding-bottom: 60px;
+}

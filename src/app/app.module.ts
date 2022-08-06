@@ -10,12 +10,16 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { FooterComponent } from './footer/footer.component';
+import { SrpIconsComponent } from './srp-icons/srp-icons.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    SrpIconsComponent
   ],
   imports: [
     BrowserModule,
