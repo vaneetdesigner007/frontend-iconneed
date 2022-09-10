@@ -6,7 +6,7 @@ const routes: Routes = [
   {path: '', loadChildren: () => import('./dashboard/dashboard.module').then(p => p.DashboardModule)},
   {path: 'login', loadChildren: () => import('./login-signup/login-signup.module').then(p => p.LoginSignupModule)},
   {path: 'icons', loadChildren: () => import('./manage-icons/manage-icons.module').then(p => p.ManageIconsModule)},
-  { path: '', loadChildren: () => import('./manage-icons/manage-icons.module').then(p => p.ManageIconsModule) },
+  // { path: '', loadChildren: () => import('./manage-icons/manage-icons.module').then(p => p.ManageIconsModule) },
   { path: 'search-icons', loadChildren: () => import('./srp-icons/srp-icons.component').then(p => p.SrpIconsComponent) },
 	{path: '**', component:NotFoundComponent}	
 ];

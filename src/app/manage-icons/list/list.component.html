@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let icon of iconList">
+        <img [src]="env?.apiUrl + icon?.iconPng?.path" alt="no-icon">
+    </li>
+</ul>

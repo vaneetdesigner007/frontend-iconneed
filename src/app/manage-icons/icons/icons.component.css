@@ -1,0 +1,362 @@
+.cs-form-block {
+    padding: 100px 0;
+}
+
+.cs-form-block {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.title-main {
+    color: #404143;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.card-common {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.03);
+    padding: 40px 40px 30px 40px;
+}
+
+.form-item>label {
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    color: #404143;
+    opacity: 1;
+    font-weight: 400;
+    margin: 0;
+    pointer-events: none;
+    font-size: 13px;
+    z-index: 1;
+    width: calc(100% - 4px);
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 16px;
+
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+input.textfield {
+    height: 70px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #cfd9e0;
+    width: 100%;
+    padding: 26px 0 6px 16px;
+    color: #404143;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.form-item .multiselect {
+    height: 70px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #cfd9e0;
+    width: 100%;
+    padding: 26px 0 6px 16px;
+    color: #404143;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+input.textfield:focus {
+    border-color: #000000;
+}
+
+input.textfield:focus+label {
+    color: #000;
+    opacity: 1;
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 16px;
+    padding-top: 34px;
+}
+
+.forgot-password a {
+    display: inline-block;
+    padding: 4px 5px;
+    color: #000000;
+    opacity: 0.7;
+    font-weight: 300;
+}
+
+.btn-submit .btn-pri {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    font-size: 18px;
+}
+
+.upload-icons-block {
+    padding: 32px 0;
+}
+
+.main-title h1 {
+    color: #404143;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 14px;
+    position: relative;
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 42px;
+}
+
+.main-title h1:before {
+    content: "";
+    width: 52px;
+    height: 1px;
+    background-color: #5368FB;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.upload-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    border: 2px dashed #D0D0D0;
+    border-radius: 6px;
+    gap: 20px;
+    color: #647582;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.badge-name {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background-color: var(--pri);
+    color: #fff;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0 8px;
+    border-radius: 5px;
+}
+
+.preview-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.preview-block span.preview {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid rgba(227, 227, 227, 0.65);
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.preview-block span.preview img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.left-block-preview {
+    display: inline-flex;
+    align-items: center;
+}
+
+.name-block-preview p.name {
+    font-size: 15px;
+}
+
+.name-block-preview p.size {
+    font-size: 12px;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.progress.progress-striped {
+    width: 100%;
+    margin-top: 3px;
+}
+
+.name-block-preview strong.error {
+    font-weight: 400;
+    font-size: 11px;
+    display: block;
+}
+
+.right-block-preview button.btn {
+    padding: 0 10px;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    border: none;
+    margin: 0 0 0 8px;
+}
+
+.file-row.dz-image-preview {
+    padding: 8px 10px;
+    background-color: #fff;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid rgba(227, 227, 227, 0.65);
+    box-shadow: 0px 29px 30px rgba(0, 0, 0, 0.02);
+}
+
+.dz-drag-hover .upload-block {
+    border-color: var(--pri);
+}
+
+.form-item .btn-group {
+    width: 100%;
+}
+
+.form-item button.multiselect.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 18px;
+}
+
+.form-item .multiselect-container {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.form-item .multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 20px 3px 20px;
+    color: #000;
+    width: 100%;
+}
+
+.bootstrap-tagsinput {
+    min-height: 70px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #cfd9e0;
+    width: 100%;
+    padding: 35px 10px 10px 16px;
+    color: #404143;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.bootstrap-tagsinput input {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 6px 0 0;
+    margin: 0;
+    width: auto;
+    max-width: inherit;
+    font-size: 16px;
+}
+
+.bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: #404143;
+    background-color: #fff;
+    border: 1px solid #CFD9E0;
+    font-size: 14px;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+    content: "x";
+    padding: 0px 2px;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:hover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.action-form button {
+    min-width: 180px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.btn-lg {
+    height: 52px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.upload-block input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.form-item select[multiple="multiple"] {
+    height: 110px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #cfd9e0;
+    width: 100%;
+    padding: 34px 0 6px 0;
+    color: #404143;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+
+.form-item select[multiple="multiple"] option {
+    padding: 6px 16px;
+}
+
+.upload-block img {
+    width: 70px;
+}

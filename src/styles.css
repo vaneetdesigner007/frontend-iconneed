@@ -120,6 +120,7 @@ ul {
     grid-gap: 25px;
     gap: 25px;
 }
+
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -151,6 +152,7 @@ body {
 main.wrapper-main {
     padding-top: 73px;
 }
+
 .btn-sec {
     background-color: var(--gray);
     height: 40px;
@@ -177,6 +179,7 @@ main.wrapper-main {
     font-weight: 600;
     cursor: pointer;
 }
+
 .btn-lg {
     height: 52px;
     font-size: 18px;
@@ -204,6 +207,7 @@ main.wrapper-main {
     outline: none;
     transition: all 0.4s ease;
 }
+
 .header-search-block input:hover {
     border-color: var(--dark);
 }
@@ -317,6 +321,7 @@ main.wrapper-main {
     background-color: #ffffff;
     padding: 60px 0;
 }
+
 .bundle-set-block .feature-item {
     border-radius: 6px;
     background: #e4f2ff;
@@ -373,6 +378,26 @@ main.wrapper-main {
     line-height: 1.4;
     margin-bottom: 10px;
 }
-.newsletter-field{
+
+.newsletter-field {
     position: relative;
+}
+
+.ic-row {
+    display: flex;
+    margin: 0 -15px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.col-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.col-100 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
 }
