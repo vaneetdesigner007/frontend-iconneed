@@ -1,0 +1,57 @@
+.table-icons-preview table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.icon-img img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    padding: 4px 4px;
+}
+.table-icons-preview th, .table-icons-preview td {
+    text-align: left;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+}
+.table-icons-preview td{
+    padding: 2px 10px;
+}
+.table-icons-preview th{
+    background-color: #eaeaea;
+}
+.icon-preview-list{
+    padding: 50px 0;
+}
+.icon-preview-list .main-title{
+    margin-bottom: 30px;
+}
+.action-icons{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.action-icons i.gi-icon{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: #ededed;
+    font-size: 14px;
+    cursor: pointer;
+}
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-icons input[type="text"] {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    font-size: 14px;
+}

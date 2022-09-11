@@ -1,5 +1,51 @@
-<ul>
-    <li *ngFor="let icon of iconList">
-        <img [src]="env?.apiUrl + icon?.iconPng?.path" alt="no-icon">
-    </li>
-</ul>
+<div class="icon-preview-list">
+    <div class="container">
+        <div class="main-title">
+            <h1>Uploaded Icons</h1>
+            <div class="search-icons">
+                <input type="text" placeholder="Search Icon" name="iconname">
+            </div>
+        </div>
+        <div class="table-icons-preview">
+            <table [cellPadding]="0" [cellSpacing]="0">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        
+                        <th>Icon Name</th>
+                        <th>Tags</th>
+                        <th>Icon Type</th>
+                        <th>Bundle Name</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let icon of iconList">
+                        <td class="icon-img">
+                            <img [src]="env?.apiUrl + icon?.iconPng?.path" [alt]=bundleName>
+                        </td>
+                        
+                        <td>
+                            {{icon.iconName}}
+                        </td>
+                        <td>
+                            {{icon.tags}}
+                        </td>
+                        <td>
+                            {{icon.iconType}}
+                        </td>
+                        <td>
+                            {{icon.bundleName}}
+                        </td>
+                        <td>
+                            <div class="action-icons">
+                                <i class="gi-icon icon-pencil"></i>
+                                <i class="gi-icon icon-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

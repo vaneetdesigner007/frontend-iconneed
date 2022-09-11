@@ -1,37 +1,36 @@
-<main class="wrapper-main">
-  <div class="container">
-    <div class="upload-icons-block">
-      <div class="main-title">
-        <h1>Upload Icon</h1>
-      </div>
+<div class="container">
+  <div class="upload-icons-block">
+    <div class="main-title">
+      <h1>Upload Icon</h1>
+    </div>
 
-      <form action="/target" class="form-item" [formGroup]="IconForm" (ngSubmit)="onSubmit()">
-        <div class="ic-row">
-          <div class="col-50">
+    <form action="/target" class="form-item" [formGroup]="IconForm" (ngSubmit)="onSubmit()">
+      <div class="ic-row">
+        <div class="col-50">
+          <div class="fileinput-button dz-clickable">
+            <div class="upload-block">
+              <div class="badge-name">PNG</div>
+              <img [src]="imageSrc" />
+              <h5 *ngIf="!imageSrc">Drag and drop or click here</h5>
+              <button type="button" class="btn-pri">Add Icon</button>
+              <input type="file" name="file" id="png-icon-v" (change)="onSelectIcon($event)" accept=".png" />
+            </div>
+          </div>
+
+        </div>
+        <div class="col-50">
+          <form action="/target" class="form-item">
             <div class="fileinput-button dz-clickable">
               <div class="upload-block">
-                <div class="badge-name">PNG</div>
-                <img [src]="imageSrc" />
-                <h5 *ngIf="!imageSrc">Drag and drop or click here</h5>
+                <div class="badge-name">SVG</div>
+                <img [src]="imageSrcSvg" />
+                <h5 *ngIf="!imageSrcSvg">Drag and drop or click here</h5>
                 <button type="button" class="btn-pri">Add Icon</button>
-                <input type="file" name="file" id="png-icon-v" (change)="onSelectIcon($event)" accept=".png" />
+                <input type="file" name="file" id="png-icon-v" (change)="selectedImageChanged($event)" accept=".svg" />
               </div>
             </div>
 
-          </div>
-          <div class="col-50">
-            <form action="/target" class="form-item">
-              <div class="fileinput-button dz-clickable">
-                <div class="upload-block">
-                  <div class="badge-name">SVG</div>
-                  <img [src]="imageSrcSvg" />
-                  <h5 *ngIf="!imageSrcSvg">Drag and drop or click here</h5>
-                  <button type="button" class="btn-pri">Add Icon</button>
-                  <input type="file" name="file" id="png-icon-v" (change)="selectedImageChanged($event)" accept=".svg" />
-                </div>
-              </div>
-
-              <!--   <div class="table table-striped" class="files" id="previews_svg">
+            <!--   <div class="table table-striped" class="files" id="previews_svg">
                             <div id="template_svg" class="file-row">
                                 <div>
                                     <span class="preview"><img data-dz-thumbnail /></span>
@@ -64,45 +63,44 @@
                                 </div>
                             </div>
                         </div> -->
-            </form>
-          </div>
-          <div class="col-50">
-            <div class="form-item">
-              <input type="text" class="textfield" formControlName="bundleName" />
-              <label>Bundle Name</label>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="form-item">
-              <input type="text" class="textfield" formControlName="iconName" />
-              <label>Icon Name</label>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="form-item">
-              <select id="multiple-checkboxes" multiple="multiple" formControlName="iconType">
-                <option value="outline">outline</option>
-                <option value="filled">filled</option>
-                <option value="gradient">gradient</option>
-              </select>
-              <label>Icon Type</label>
-            </div>
-          </div>
-          <div class="col-50">
-            <div class="form-item">
-              <input type="text" class="textfield" value="" data-role="tagsinput" formControlName="tag" />
-              <label>Related Icons</label>
-            </div>
-          </div>
-          <div class="col-100">
-            <div class="action-form">
-              <button class="btn-pri btn-lg" type="submit">Save</button>
-              <button class="btn-sec btn-lg" type="submit">Cancel</button>
-            </div>
+          </form>
+        </div>
+        <div class="col-50">
+          <div class="form-item">
+            <input type="text" class="textfield" formControlName="bundleName" />
+            <label>Bundle Name</label>
           </div>
         </div>
-      </form>
+        <div class="col-50">
+          <div class="form-item">
+            <input type="text" class="textfield" formControlName="iconName" />
+            <label>Icon Name</label>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="form-item">
+            <select id="multiple-checkboxes" multiple="multiple" formControlName="iconType">
+              <option value="outline">outline</option>
+              <option value="filled">filled</option>
+              <option value="gradient">gradient</option>
+            </select>
+            <label>Icon Type</label>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="form-item">
+            <input type="text" class="textfield" value="" data-role="tagsinput" formControlName="tag" />
+            <label>Related Icons</label>
+          </div>
+        </div>
+        <div class="col-100">
+          <div class="action-form">
+            <button class="btn-pri btn-lg" type="submit">Save</button>
+            <button class="btn-sec btn-lg" type="button">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
 
-    </div>
   </div>
-</main>
+</div>
